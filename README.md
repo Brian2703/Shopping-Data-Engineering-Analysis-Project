@@ -8,7 +8,9 @@ The goal is to extract insights into customer demographics, purchased items, and
 
 ## Data Pipeline Architecture:
 
+
 <img width="810" alt="Screenshot 2025-03-13 at 7 43 44 pm" src="https://github.com/user-attachments/assets/b572e0f2-e520-4c5c-91f6-d565a37b4e90" />
+
 
 Bronze Layer: Raw data ingestion from AWS S3 into Databricks for storage in Delta Lake in its original form.
 
@@ -16,7 +18,7 @@ Silver Layer: Data cleaning, transformation, and structuring for analysis.
 
 Gold Layer: Aggregations, calculations, and business intelligence insights.
 
-1. Key Processes in Each Layer:
+## Key Processes in Each Layer:
 
 Bronze (Raw Data):
 - Load raw shopping data from AWS S3.
