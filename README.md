@@ -1,4 +1,4 @@
-# Customer Shopping Analysis (Databrick & AWS
+# Customer Shopping Analysis (Databrick & AWS)
 
 ## Overview
 
