@@ -18,10 +18,10 @@ Gold Layer: Aggregations, calculations, and business intelligence insights.
 
 Bronze (Raw Data):
 - Load raw shopping data from AWS S3.
-- Store data in its original form for traceability.
+- Store data in DeltaLake.
   
 Silver (Processed Data)
-- Handle missing values and fix inconsistencies.
+- Handle missing values.
 - Standardize formats and perform transformations.
 - Validate and prepare data for analytics.
 
@@ -43,22 +43,21 @@ This project follows a structured ETL approach to process and refine raw shoppin
 
 ## Project Workflow
 1. <b>Create S3 bucket and upload dataset</b>
+Log in to AWS and create a new S3 bucket to store raw shopping data.
+Upload the dataset files into the S3 bucket under a designated folder for structured storage.
 
-2. <b>Create an IAM User in AWS</b>
+2. <b> Create an IAM User in AWS</b>
+Set up an IAM user to manage access control for Databricks.
+Assign the AmazonS3FullAccess permission to ensure seamless data access.
+Obtain the Access Key ID and Secret Access Key.
 
-Set permissions to this user:
+3. <b>Create Databricks Workspace and Link it with S3</b>
+Set up a Databricks workspace on AWS for data processing and analytics.
+Configure Databricks to connect directly to the S3 bucket using IAM authentication.
 
-- AmazonS3FullAccess
+4. <b>Create Bronze Notebook, Silver Notebook and Gold Notebook</b>
+5. <b>SQL queries for plotting charts</b>
+All queries is store in folder
+5. <b>Dashboard building</b>
 
-2. <b>Create Databrick worspace and link it with S2</b>
 
-3. <b>Create Bronze Notebook</b>
-
-
-1. <b>Data is loaded into songplays fact table</b>
-
-<img src="images/songplays_table.png" width="70%">
-
-2. <b>The DAG is success for all tasks</b>
-
-<img src="images/sparkify_DAG_success.png" width="70%">
