@@ -65,5 +65,6 @@ SQL queries are used to create visualizations and business intelligence reports 
 - All queries is store in folder
 
 5. <b>Dashboard building</b>
+<img width="737" alt="Screenshot 2025-03-13 at 7 39 52 pm" src="https://github.com/user-attachments/assets/7cccb1a2-ae94-48fe-973a-efdf9e881822" />
 
 
