@@ -36,28 +36,30 @@ SQL queries are used to create visualizations and business intelligence reports 
 
 
 ## Technology Stack:
-Cloud Storage: AWS S3
-Data Processing: Databricks (Apache Spark, Delta Lake)
-Analytics & Dashboarding: Databricks SQL
-This project follows a structured ETL approach to process and refine raw shopping data into meaningful insights, optimizing data quality, monitoring, and pipeline reusability.
+- Cloud Storage: AWS S3
+- Data Processing: Databricks (Apache Spark, Delta Lake)
+- Analytics & Dashboarding: Databricks SQL
+- This project follows a structured ETL approach to process and refine raw shopping data into meaningful insights, optimizing data quality, monitoring, and pipeline reusability.
 
 ## Project Workflow
 1. <b>Create S3 bucket and upload dataset</b>
-Log in to AWS and create a new S3 bucket to store raw shopping data.
-Upload the dataset files into the S3 bucket under a designated folder for structured storage.
+- Log in to AWS and create a new S3 bucket to store raw shopping data.
+- Upload the dataset files into the S3 bucket under a designated folder for structured storage.
 
 2. <b> Create an IAM User in AWS</b>
-Set up an IAM user to manage access control for Databricks.
-Assign the AmazonS3FullAccess permission to ensure seamless data access.
-Obtain the Access Key ID and Secret Access Key.
+- Set up an IAM user to manage access control for Databricks.
+- Assign the AmazonS3FullAccess permission to ensure seamless data access.
+- Obtain the Access Key ID and Secret Access Key.
 
 3. <b>Create Databricks Workspace and Link it with S3</b>
-Set up a Databricks workspace on AWS for data processing and analytics.
-Configure Databricks to connect directly to the S3 bucket using IAM authentication.
+- Set up a Databricks workspace on AWS for data processing and analytics.
+- Configure Databricks to connect directly to the S3 bucket using IAM authentication.
 
 4. <b>Create Bronze Notebook, Silver Notebook and Gold Notebook</b>
+
 5. <b>SQL queries for plotting charts</b>
-All queries is store in folder
+- All queries is store in folder
+
 5. <b>Dashboard building</b>
 
 
